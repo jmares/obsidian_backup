@@ -12,9 +12,20 @@ It has been a while since I did any python coding, or even any coding at all.
 
 What do I need? A script that
 
-- [ ] Makes a copy of my vault, manually
+- [x] Makes a copy of my vault, manually
+- [x] Add a timestamp to the name
 - [ ] Moves it to a location outside of my desktop pc (OneDrive, DropBox, SSD)
 - [ ] Compresses the vault before moving it
 - [ ] Encrypts the vault before moving it
 - [ ] Automate the process (cron) 
+- [ ] Add logging 
+- [ ] Multiple vaults
 
+## Log
+
+## 2022-12-15
+
+- Created repository
+- Created script to test functionality
+    - copy vault to another directory
+    - add timestamp to the backup
