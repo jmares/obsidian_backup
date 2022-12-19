@@ -14,14 +14,32 @@ What do I need? A script that
 
 - [x] Makes a copy of my vault, manually
 - [x] Add a timestamp to the name
-- [ ] Moves it to a location outside of my desktop pc (OneDrive, DropBox, SSD)
-- [ ] Compresses the vault before moving it
-- [ ] Encrypts the vault before moving it
+- [x] Moves it to a location outside of my desktop pc (OneDrive, DropBox, SSD, ...)
+- [x] Compresses the vault before moving it
+- [x] Encrypts the vault before moving it
 - [ ] Automate the process (cron) 
 - [ ] Add logging 
 - [ ] Multiple vaults
+- [ ] SCP to remote server
 
 ## Log
+
+## 2022-12-19
+
+- copy compressed and encrypted backupt to two locations outside of internal HD, in my case:
+    - external SSD
+    - OneDrive
+- quick and dirty
+
+## 2022-12-18
+
+- installing `py7zr`
+
+```bash
+pip install py7zr
+```
+
+- compressing and encrypting locally
 
 ## 2022-12-15
 
