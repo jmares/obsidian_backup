@@ -24,6 +24,15 @@ What do I need? A script that
 - [ ] SCP to remote server
 - [ ] Clean up temporary files
 
+## Password Generator
+
+When you create lots of encrypted backups, you can either use a static password or use a formula to give each backup a unique password
+
+- static: `3#GhIjKl$2`
+- dynamic based on filename: `#my_vault_backup!`
+- dynamic based on date:  `#!20221223!@`
+- ...
+
 
 ## Problem Solving
 
@@ -88,6 +97,10 @@ Enter the following line and save the file.
 This got it working for me.
 
 ## Log
+
+### 2022-12-23
+
+- added the password generator
 
 ### 2022-12-22
 

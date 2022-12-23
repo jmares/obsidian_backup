@@ -2,3 +2,4 @@
 __pycache__/
 config.py
 message.txt
+password_generator.py

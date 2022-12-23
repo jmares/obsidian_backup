@@ -6,6 +6,7 @@ import shutil
 from config import SOURCE_PATH, TEMP_PATH, LOG_PATH, VAULTS, BACKUP_LOCATIONS
 from datetime import datetime
 import py7zr
+from password_generator import get_password
 
 def create_backup(vault):
     """
@@ -27,7 +28,7 @@ def create_backup(vault):
         # Compress and encrypt temp vault directory
         backup_vault = temp_vault_dir + '.7z'
         #print("Compressing and encrypting", backup_vault)
-        with py7zr.SevenZipFile(TEMP_PATH + backup_vault, 'w', password='secret') as archive:
+        with py7zr.SevenZipFile(TEMP_PATH + backup_vault, 'w', password=get_password(temp_vault_dir)) as archive:
             archive.writeall(dst, vault)
 
         move_backup(backup_vault)
